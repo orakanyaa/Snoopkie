@@ -107,10 +107,8 @@ class Monster(arcade.Sprite):
                 if arcade.check_for_collision(Cookie,self.Snoopy):
                     self.Cookie.remove(Cookie)
                     if self.score > 100:
-                        # self.score += randint(5,10)
-                        self.score += 10
+                        self.score += 5
                     else :
-                        # self.score += randint(10,20)
                         self.score += 10
                 if Cookie.center_y < 0:
                     self.Cookie.remove(Cookie)
